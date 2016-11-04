@@ -6,15 +6,22 @@
     <hl>Magic is amazing</hl>
     <br />
     H
+    <div id="myDiv"></div>
     <p>
       a paragraph tag
     </p>
     who is your favorite singer?
     <input type="text" id="anwser">
+    <select id="myselect">
+      <option>Washington</option>
+      <option>disarray</option>
+     </select>
     <input type="submit" onclick="sayAnwser()" value="press">
     <script>
     function sayAnwser(){
     var answer = document.getElementById("anwser");
+    var myDiv = document.getElementById("myDiv);
+     myDiv.innerHTML = answer.value + "!!!"
       alert(answer.value);
     }
     </script>
