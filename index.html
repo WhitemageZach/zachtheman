@@ -3,12 +3,22 @@
     <title>Magic</title>
   </head>
   <body>
-    <hl>Header tag</hl>
+    <hl>Magic is amazing</hl>
     <br />
     H
     <p>
       a paragraph tag
     </p>
+    who is your favorite singer?
+    <input type="text" id="anwser">
+    <input type="submit" onclick="sayAnwser()" value="press">
+    <script>
+    function sayAnwser(){
+    var answer=document.getElementById("anwser");
+      alert(answer.value);
+    }
+    </script>
+    
     
     </body>
   
